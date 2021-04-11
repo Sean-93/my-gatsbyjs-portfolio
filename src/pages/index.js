@@ -1,17 +1,15 @@
 import React from "react"
-import { HomePageHeaderBox, HomePageHeaderTitle, HomePageHeaderText, } from "../styles/general-styles"
+import { Helmet } from "react-helmet"
+import Layout from "../components/layout"
 
 export default function Home() {
   return (
-  <div>
-    <HomePageHeaderBox>
-    <HomePageHeaderTitle>
-      SEAN ROONEY
-    </HomePageHeaderTitle>
-    <HomePageHeaderText>
-      My name is Sean Rooney, and I'm a web developer from Tempe, Arizona.   
-    </HomePageHeaderText>
-    </HomePageHeaderBox>
-  </div>
+    <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Const SeanRooney = WebDev</title>
+        <link rel="canonical" href="http://sean-rooney.netlify.app" />
+      </Helmet>
+    </Layout>
   )
 }
