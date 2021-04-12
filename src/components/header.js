@@ -52,7 +52,7 @@ export default function Header() {
               <a href="mailto:seandanielrooney@gmail.com?subject=Project Commission Inquiry">
                 contact me via email to inquire about project commissions or
                 other services like private tutoring or assisting with web
-                hosting issues.
+                hosting issues &rarr;
               </a>
             </HeaderText>
           </div>
@@ -61,13 +61,19 @@ export default function Header() {
       <NavBox>
         <div className="grid grid-cols-3 gap-10">
           <NavLinkText>
-            <Link to="/"><FontAwesomeIcon icon={faHome} size="1x" />{" "}Home</Link>
+            <Link to="/">
+              <FontAwesomeIcon icon={faHome} size="1x" /> Home
+            </Link>
           </NavLinkText>
           <NavLinkText>
-            <Link to="/about"><FontAwesomeIcon icon={faQuestionCircle} size="1x" />{" "}About</Link>
+            <Link to="/about">
+              <FontAwesomeIcon icon={faQuestionCircle} size="1x" /> About
+            </Link>
           </NavLinkText>
           <NavLinkText>
-            <Link to="/contact"><FontAwesomeIcon icon={faMobileAlt} size="1x" />{" "}Contact</Link>
+            <Link to="/contact">
+              <FontAwesomeIcon icon={faMobileAlt} size="1x" /> Contact
+            </Link>
           </NavLinkText>
         </div>
       </NavBox>

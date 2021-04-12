@@ -13,10 +13,16 @@ export const HeaderBox = styled.div`
 export const HeaderText = styled.p`
   color: rgb(75, 75, 75);
   text-shadow: 0.25vw rgb(125, 125, 125);
-  font-size: 1.25vw;
+  font-size: 1.45vw;
   margin: 1% 5% 1% 35%;
   @media only screen and (max-width: 1600px) {
     margin: 1.5% 5% 1.5% 45%;
+  }
+  @media only screen and (max-width: 1400px) {
+    font-size: 1.75vw;
+  }
+  @media only screen and (max-width: 1200px) {
+    margin: 1.5% 5% 1.5% 60%;
   }
 `
 
@@ -24,15 +30,23 @@ export const NavBox = styled.nav`
   border-radius: 5%;
   background-color: rgb(225, 225, 225);
   border: solid 0.25vw rgb(185, 185, 185);
-  margin: 1.5% 30% 1.5% 25%;
+  margin: 1.5% 35% 1.5% 15%;
   @media only screen and (max-width: 1600px) {
     margin: 1.5% 5% 1.5% 30%;
+  }
+  @media only screen and (max-width: 1200px) {
+    font-size: 1.55vw;
+    margin: 1.5% 5% 1.5% 45%;
   }
 `
 
 export const NavLinkText = styled.span`
-  margin: 10%;
-  font-size: 1vw;
+  margin: 5%;
+  font-size: 1.25vw;
   color: rgb(75, 75, 75);
   text-shadow: 0.25vw rgb(125, 125, 125);
+  @media only screen and (max-width: 1200px) {
+    font-size: 1.55vw;
+    margin: 7.5%;
+  }
 `
